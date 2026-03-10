@@ -1,0 +1,41 @@
+{
+    "transactionId": "624deea6-b709-470c-8c39-4b5511281492",
+    "customerTransactionId": "AnyCo_order123456789",
+    "output": {
+        "transactionShipments": [
+            {
+                "serviceType": "STANDARD_OVERNIGHT",
+                "shipDatestamp": "2024-01-15",
+                "serviceCategory": "EXPRESS",
+                "serviceName": "FedEx Standard Overnight",
+                "masterTrackingNumber": "794644790138",
+                "shipmentDocuments": [],
+                "pieceResponses": [
+                    {
+                        "netChargeAmount": 25.50,
+                        "trackingNumber": "794644790138",
+                        "baseRateAmount": 22.00,
+                        "packageSequenceNumber": 1,
+                        "packageDocuments": [
+                            {
+                                "contentKey": "content-key-123",
+                                "contentType": "LABEL",
+                                "trackingNumber": "794644790138",
+                                "docType": "PDF",
+                                "url": "https://apis.fedex.com/documents/v1/label/794644790138"
+                            }
+                        ]
+                    }
+                ],
+                "alerts": [
+                    {
+                        "code": "SHIPMENT.VALIDATION.SUCCESS",
+                        "alertType": "NOTE",
+                        "message": "Shipment created successfully."
+                    }
+                ]
+            }
+        ],
+        "alerts": []
+    }
+}

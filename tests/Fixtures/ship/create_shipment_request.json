@@ -1,0 +1,57 @@
+{
+    "accountNumber": {
+        "value": "123456789"
+    },
+    "labelResponseOptions": "URL_ONLY",
+    "requestedShipment": {
+        "shipper": {
+            "address": {
+                "streetLines": ["123 Ship Street"],
+                "city": "Memphis",
+                "stateOrProvinceCode": "TN",
+                "postalCode": "38116",
+                "countryCode": "US"
+            },
+            "contact": {
+                "personName": "John Shipper",
+                "phoneNumber": "1234567890",
+                "companyName": "Shipper Co"
+            }
+        },
+        "recipients": [
+            {
+                "address": {
+                    "streetLines": ["456 Recipient Ave"],
+                    "city": "Los Angeles",
+                    "stateOrProvinceCode": "CA",
+                    "postalCode": "90001",
+                    "countryCode": "US"
+                },
+                "contact": {
+                    "personName": "Jane Recipient",
+                    "phoneNumber": "0987654321",
+                    "companyName": "Recipient Inc"
+                }
+            }
+        ],
+        "pickupType": "DROPOFF_AT_FEDEX_LOCATION",
+        "serviceType": "STANDARD_OVERNIGHT",
+        "packagingType": "YOUR_PACKAGING",
+        "totalWeight": 10.0,
+        "shippingChargesPayment": {
+            "paymentType": "SENDER"
+        },
+        "labelSpecification": {
+            "imageType": "PDF",
+            "labelStockType": "PAPER_4X6"
+        },
+        "requestedPackageLineItems": [
+            {
+                "weight": {
+                    "units": "LB",
+                    "value": 10.0
+                }
+            }
+        ]
+    }
+}

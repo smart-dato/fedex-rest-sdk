@@ -1,0 +1,13 @@
+{
+    "transactionId": "624deea6-b709-470c-8c39-4b5511281492",
+    "customerTransactionId": "AnyCo_order123456789",
+    "output": {
+        "alerts": [
+            {
+                "code": "SHIPMENT.VALIDATION.SUCCESS",
+                "alertType": "NOTE",
+                "message": "Validation successful."
+            }
+        ]
+    }
+}
