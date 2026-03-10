@@ -8,7 +8,8 @@
       "Bash(composer test:*)",
       "Bash(composer analyse:*)",
       "Bash(composer format:*)",
-      "Bash(gh api:*)"
+      "Bash(gh api:*)",
+      "Bash(git tag:*)"
     ]
   }
 }
