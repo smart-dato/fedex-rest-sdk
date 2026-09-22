@@ -1,5 +1,6 @@
 <?php
 
+use Saloon\Contracts\Authenticator;
 use SmartDato\FedEx\Auth\FedExAuthenticator;
 
 it('is a saloon authenticator', function () {
@@ -9,7 +10,7 @@ it('is a saloon authenticator', function () {
         baseUrl: 'https://apis-sandbox.fedex.com',
     );
 
-    expect($authenticator)->toBeInstanceOf(\Saloon\Contracts\Authenticator::class);
+    expect($authenticator)->toBeInstanceOf(Authenticator::class);
 });
 
 it('supports different grant types', function () {
@@ -22,5 +23,5 @@ it('supports different grant types', function () {
         childSecret: 'child-secret',
     );
 
-    expect($authenticator)->toBeInstanceOf(\Saloon\Contracts\Authenticator::class);
+    expect($authenticator)->toBeInstanceOf(Authenticator::class);
 });
