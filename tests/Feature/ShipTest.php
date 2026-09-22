@@ -10,9 +10,11 @@ use SmartDato\FedEx\Data\Ship\CreateShipmentData;
 use SmartDato\FedEx\Data\Ship\ShipmentResponseData;
 use SmartDato\FedEx\Data\Ship\ValidateShipmentData;
 use SmartDato\FedEx\Data\Ship\ValidateShipmentResponseData;
+use SmartDato\FedEx\FedEx;
 use SmartDato\FedEx\Requests\Ship\CancelShipmentRequest;
 use SmartDato\FedEx\Requests\Ship\CreateShipmentRequest;
 use SmartDato\FedEx\Requests\Ship\ValidateShipmentRequest;
+use SmartDato\FedEx\Resources\DocumentResource;
 use SmartDato\FedEx\Resources\ShipResource;
 
 beforeEach(function () {
@@ -105,12 +107,12 @@ it('validates a shipment and returns validate response', function () {
 });
 
 it('builds FedEx on the fly with make()', function () {
-    $fedex = \SmartDato\FedEx\FedEx::make([
+    $fedex = FedEx::make([
         'client_id' => 'test-id',
         'client_secret' => 'test-secret',
         'base_url' => 'https://apis-sandbox.fedex.com',
     ]);
 
     expect($fedex->ship())->toBeInstanceOf(ShipResource::class);
-    expect($fedex->documents())->toBeInstanceOf(\SmartDato\FedEx\Resources\DocumentResource::class);
+    expect($fedex->documents())->toBeInstanceOf(DocumentResource::class);
 });
