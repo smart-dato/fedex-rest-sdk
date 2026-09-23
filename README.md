@@ -2,10 +2,10 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/smart-dato/fedex-rest-sdk.svg?style=flat-square)](https://packagist.org/packages/smart-dato/fedex-rest-sdk)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/smart-dato/fedex-rest-sdk/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/smart-dato/fedex-rest-sdk/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/smart-dato/fedex-rest-sdk/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/smart-dato/fedex-rest-sdk/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/smart-dato/fedex-rest-sdk/code-style.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/smart-dato/fedex-rest-sdk/actions?query=workflow%3A%22Code+style%22+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/smart-dato/fedex-rest-sdk.svg?style=flat-square)](https://packagist.org/packages/smart-dato/fedex-rest-sdk)
 
-Laravel package for integrating with the FedEx REST APIs. Supports shipment creation, cancellation, validation, tag management, and trade document uploads. Built on [Saloon 3.x](https://docs.saloon.dev) for HTTP and [Spatie Laravel Data 4.x](https://spatie.be/docs/laravel-data) for DTOs.
+Laravel package for integrating with the FedEx REST APIs. Supports shipment creation, cancellation, validation, tag management, and trade document uploads. Built on [Saloon 4.x](https://docs.saloon.dev) for HTTP and [Spatie Laravel Data 4.x](https://spatie.be/docs/laravel-data) for DTOs.
 
 ## Requirements
 
@@ -397,10 +397,6 @@ composer test-coverage    # Tests with coverage report
 ## Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
-
-## Contributing
-
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Security Vulnerabilities
 
